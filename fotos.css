@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;    
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro',sans-serif;
+}
+li:hover{
+    color:#d21617
+}
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+.actor-cards-container{
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.card{
+    width: 95%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam thmor pro',sans-serif; 
+}
+.banner-1{
+    background-image: url('https://th.bing.com/th/id/OIP.Pcnh-i3HfSl-uFa5CQp5qAAAAA?rs=1&pid=ImgDetMain');
+}
+.banner-2{
+    background-image: url('https://images.hdqwalls.com/download/zoe-kravitz-as-catwoman-in-the-batman-movie-2022-wb-2560x1440.jpg');
+}
+.banner-3{
+    background-image: url('https://wallpapercave.com/wp/wp10495984.jpg');
+}
+.banner-4{
+    background-image: url('https://i.pinimg.com/originals/3a/f4/5b/3af45b5a584ea99fea6a0c02086db630.jpg');
+}
+.banner-5{
+    background-image: url('https://th.bing.com/th/id/OIP.oG0u4t1o6eRm_4_6eWlhNwHaKd?w=500&h=706&rs=1&pid=ImgDetMain')
+}
+.banner-6{
+    background-image: url('https://b985radio.com/wp-content/uploads/2020/08/robert-pattison-as-batman.jpg')
+}
+.banner-7{
+    background-image: url('https://m.media-amazon.com/images/M/MV5BYjVmMGU3ZjAtMDNmMy00ZmE2LWI0ODQtMzc2NDczOTdlZjYyXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg')
+}
+.banner-8{
+    background-image: url('https://th.bing.com/th/id/OIP.G2vKh8S2pS2Te_VPzkcjhwHaD5?rs=1&pid=ImgDetMain')
+}
+.banner-9{
+    background-image: url('https://wallpapercave.com/wp/wp9429772.jpg')
+}
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family:'kdam thmor pro',sans-serif;  
+}
+.footer-navigation{
+    display: none;
+
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width:768px){
+    .footer-navigation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        background-position: 40%;
+    }
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer{
+        width: 100%;
+    }
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
