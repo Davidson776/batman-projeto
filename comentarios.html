@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contato</title>
-    <link rel="stylesheet"href="./comentarios.css">
-    <link rel="shortcut icon" href="./assets/batman-favi-Icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="comentarios.css">
+    <title>Página de Comentários</title>
 </head>
 <body>
     <header>
@@ -27,16 +26,28 @@
             </ul>
         </nav>
     </header>
-    <p>Deixe seu comentario abaixo</p>
-    <div id="banner">
-        <textarea  name="mensagem" id="mensagem" rows="10">
-
-        </textarea>
+    
+    <div class="banner">
+        <p class="text">Deixe seu comentário abaixo!</p>
     </div>
+    
+    <main>
+        <section class="comentarios">
+            <h2>Comentários</h2>
+            <form id="comentarioForm">
+                <textarea placeholder="Escreva seu comentário aqui..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="lista-comentarios">
+                <!-- Comentários serão adicionados aqui -->
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <img style="object-fit: contain;"id="logo" src="./assets/logo.jpg"/>
-        <span>todos os direitos são reservados©</span>
-        <span>desenvolvido por davidosn martins</span>
+        <p>&copy; 2023 Página de Comentários. Todos os direitos reservados.</p>
+        <p>&copy; Desenvolvido por Davidson martins</p>
 
         <nav class="footer-navigation">
             <ul class="footer-list">
@@ -55,5 +66,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
